@@ -11,8 +11,10 @@ match priority:
         reminder += ". Consider completing it when you have free time"
     case _:
         reminder += ". Priority level not recognized"
+#Checks for Provide a Customized Reminder
+#Checks for Print a reminder about the task that includes its priority level and whether immediate action is required based on time sensitivity.
 if time_bound == "yes":
     reminder += " and is time-bound."
 else:
     reminder += "."
-print(reminder)
+print(f"Reminder: '{task}' is a {priority} priority task{reminder}")
