@@ -11,3 +11,8 @@ match priority:
         reminder += ". Consider completing it when you have free time"
     case _:
         reminder += ". Priority level not recognized"
+if time_bound == "yes":
+    reminder += " and is time-bound."
+else:
+    reminder += "."
+print(reminder)
